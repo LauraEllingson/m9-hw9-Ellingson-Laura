@@ -146,59 +146,59 @@ footer {
     display: grid;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    padding-right: 25px;
-  }
-  nav > a:not(:first-of-type){
-    margin-left: 0px;
-  }
-  nav a {
-    font-size: medium;
   }
 
-  a.logo {
-    padding: 5px 0px 15px 0px;
-    margin: 0;
-  }
+}
 
-  section.hero {
-    margin-bottom: 10px;
-  }
+nav a {
+  font-size: large;
+  text-align: center;
+  align-items: center;
+  margin-right: 20px;
+}
 
-  section.hero>.call-to-action {
-    font-size: 1.3rem;
-    font-weight: 700;
-    text-shadow: var(--white) 0px 0px 10px, var(--white) 0px 0px 20px, var(--gray) 2px 2px 2px;
-    padding: 0 48px;
-    margin: 0;
-  }
+a.logo {
+  padding: 5px 0px 15px 0px;
+  margin: 0;
+}
 
-  section.hero>button {
-    padding: 12px 24px;
-    font-size: small;
-  }
+section.hero {
+  margin-bottom: 10px;
+}
 
-  main article {
-    padding: 12px 30px;
-    margin-bottom: 10px;
-    font-size: medium;
+section.hero>.call-to-action {
+  font-size: 1.3rem;
+  font-weight: 700;
+  text-shadow: var(--white) 0px 0px 10px, var(--white) 0px 0px 20px, var(--gray) 2px 2px 2px;
+  padding: 0 48px;
+  margin: 0;
+}
 
-  }
+section.hero>button {
+  padding: 12px 24px;
+  font-size: small;
+}
 
-  H1 {
-    text-align: center;
-    font-size: 30px;
-  }
-  H2 {
-   text-align: center;
-  }
+main article {
+  padding: 12px 30px;
+  margin-bottom: 10px;
+  font-size: medium;
 
-  main>article img {
-    display: block;
-    float: none;
-    width: 90%;
-    margin: auto;
-    padding: auto;
-  }
+}
 
+H1 {
+  text-align: center;
+  font-size: 30px;
+}
+
+H2 {
+  text-align: center;
+}
+
+main>article img {
+  display: block;
+  float: none;
+  width: 90%;
+  margin: auto;
+  padding: auto;
 }
