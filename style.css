@@ -25,7 +25,8 @@ h1 {
   font-size: 2.5rem;
 }
 
-h1, h2 {
+h1,
+h2 {
   text-align: center;
 }
 
@@ -52,7 +53,8 @@ main a {
   color: var(--danger-color);
 }
 
-main > article, nav{
+main>article,
+nav {
   max-width: 1200px;
   margin: 0 auto;
   box-sizing: border-box;
@@ -62,22 +64,23 @@ nav {
   display: flex;
 }
 
-nav > a:not(:first-of-type){
+nav>a:not(:first-of-type) {
   margin-left: 24px;
 }
 
-nav > a.logo {
+nav>a.logo {
   margin-right: auto;
   text-transform: uppercase;
 }
 
-main > section, main > article {
+main>section,
+main>article {
   margin-bottom: 96px;
   box-shadow: 4px 4px 10px var(--gray);
   background-color: var(--white);
 }
 
-main > section.hero {
+main>section.hero {
   height: 300px;
   background-image: url(https://picsum.photos/1920/1000);
   background-size: cover;
@@ -89,7 +92,7 @@ main > section.hero {
   text-align: center;
 }
 
-section.hero > .call-to-action {
+section.hero>.call-to-action {
   font-size: 2rem;
   font-weight: 700;
   text-shadow: var(--white) 0px 0px 10px, var(--white) 0px 0px 20px, var(--gray) 2px 2px 2px;
@@ -97,7 +100,7 @@ section.hero > .call-to-action {
   margin: 0;
 }
 
-section.hero > button {
+section.hero>button {
   background-color: var(--secondary-color);
   border: none;
   padding: 12px 24px;
@@ -112,10 +115,11 @@ main article {
 
 main p {
   line-height: 1.75;
-  margin-bottom: 48px;;
+  margin-bottom: 48px;
+  ;
 }
 
-main > article img {
+main>article img {
   float: left;
   width: 300px;
   height: auto;
@@ -130,4 +134,67 @@ footer {
   text-transform: uppercase;
   padding: 24px 0;
   color: var(--off-white);
+}
+
+/* mobile responsive screen */
+@media screen and (max-width: 500px) {
+  header {
+    padding: 10px 0px 10px 0px;
+  }
+
+  nav {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-right: 25px;
+  }
+
+  nav a {
+    margin-right: 20px;
+    font-size: 23px;
+  }
+
+  a.logo {
+    padding: 5px 0px 15px 0px;
+    margin: 0;
+  }
+
+  section.hero {
+    margin-bottom: 10px;
+  }
+
+  section.hero>.call-to-action {
+    font-size: 1.3rem;
+    font-weight: 700;
+    text-shadow: var(--white) 0px 0px 10px, var(--white) 0px 0px 20px, var(--gray) 2px 2px 2px;
+    padding: 0 48px;
+    margin: 0;
+  }
+
+  section.hero>button {
+    padding: 12px 24px;
+    font-size: small;
+  }
+
+  main article {
+    padding: 12px 30px;
+    margin: 0px 0px;
+    font-size: medium;
+
+  }
+
+  H1 {
+    text-align: center;
+    font-size: 30px;
+  }
+
+  main>article img {
+    display: block;
+    float: none;
+    width: 80%;
+    margin: auto;
+    padding: auto;
+  }
+
 }
