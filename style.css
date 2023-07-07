@@ -40,7 +40,7 @@ a:hover {
 
 header {
   background-color: var(--primary-color);
-  padding: 48px 0;
+  padding: 48px 10px;
   border-bottom: var(--secondary-color) 6px solid;
 }
 
@@ -149,10 +149,11 @@ footer {
     text-align: center;
     padding-right: 25px;
   }
-
+  nav > a:not(:first-of-type){
+    margin-left: 0px;
+  }
   nav a {
-    margin-right: 20px;
-    font-size: 23px;
+    font-size: medium;
   }
 
   a.logo {
@@ -179,7 +180,7 @@ footer {
 
   main article {
     padding: 12px 30px;
-    margin: 0px 0px;
+    margin-bottom: 10px;
     font-size: medium;
 
   }
@@ -188,11 +189,14 @@ footer {
     text-align: center;
     font-size: 30px;
   }
+  H2 {
+   text-align: center;
+  }
 
   main>article img {
     display: block;
     float: none;
-    width: 80%;
+    width: 90%;
     margin: auto;
     padding: auto;
   }
